@@ -3,8 +3,12 @@ module.exports = {
     browser: true,
     commonjs: true,
   },
-  extends: ["eslint:recommended", "plugin:prettier/recommended"],
-  parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint"],
+  extends: [
+    'eslint:recommended',
+    'plugin:prettier/recommended',
+    'plugin:jest/recommended',
+  ],
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint', 'jest'],
   rules: {},
 };
